@@ -10,7 +10,7 @@ source:
   sha256: 091c22dcb2445141727fe26f06a7d4ac767bd3a839d92fb277df31dbf976761e
 
 build:
-  number: 1
+  number: 2
   skip: True  # [win]
 
 requirements:
@@ -25,7 +25,7 @@ requirements:
 
 about:
   home: https://www.usm.uni-muenchen.de/people/cag/fitstools.html
-  license: GPL-2.0
+  license: GPL-2.0-only
   license_family: GPL
   license_file: COPYING
   summary: 'Basic shell commandline programs that can perform many operations on FITS files'
