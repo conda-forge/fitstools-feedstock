@@ -3,19 +3,20 @@
 
 package:
   name: {{ name }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: http://www.usm.uni-muenchen.de/people/cag/{{ name }}-{{ version }}.tar.gz
   sha256: 091c22dcb2445141727fe26f06a7d4ac767bd3a839d92fb277df31dbf976761e
 
 build:
-  number: 2
+  number: 3
   skip: True  # [win]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib('c') }}
     - make
     - autoconf
     - automake
